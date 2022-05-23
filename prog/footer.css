@@ -1,0 +1,51 @@
+.footer {
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 25vh;
+	background-color: #E8E8E8;
+	overflow-y: hidden;
+}
+
+.footer-contacts {
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 10px;
+}
+
+.contact-text {
+	font-family: 'Lemon Milk';
+	font-size: 3.5vh;
+}
+
+.contact-wrap {
+	flex-direction: column;
+}
+
+.footer-logo {
+	flex-direction: column;
+	margin: 10px;
+}
+
+.contact-links {
+	font-family: 'Lato';
+	color: #292929;
+	font-size: 20px;
+	font-weight: 200;
+	text-decoration: none;
+	margin-right: auto;
+}
+
+.boracay-footer {
+	font-family: 'Lemon Milk';
+	font-size: 5vh;
+	text-shadow: 0px 3px 15px rgba(0,0,0, 40%);
+	line-height: 0.5em;
+}
+
+.island-footer {
+	font-family: 'Vladimir';
+	font-size: 5vh;
+	text-shadow: 0px 3px 6px rgba(0,0,0, 70%);
+}
+

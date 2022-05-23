@@ -1,0 +1,123 @@
+@media(max-width: 1300px){
+	.intro-img:hover {
+		transform: scale(1);
+	}
+	.intro-img:hover ~ img {
+		transform: translateX(0);
+	}
+	.dining-gallery-2-1 {
+		display: none;
+	}
+	.dining-gallery-2{
+		display: none;
+	}
+	.dining-text-text{
+		letter-spacing: 0;
+		max-width: 50vw;
+		font-size: 2.5vw;
+	}
+	.shop-text-text{
+		letter-spacing: 0;
+		max-width: 50vw;
+		font-size: 2.5vw;
+	}
+	.shop-gallery-1, .shop-gallery-2-1-ov{
+		display: none;
+	}
+	.lodging-pane .overlay-text {
+		display: none;
+	}
+	.lodging-img {
+		width: 25vw;
+		height: 25vw;
+		margin: 5px;
+		object-fit: cover;
+		justify-content: center;
+	}
+	.activities-home .overlay-text {
+		display: none;
+	}
+	.activities-img-ov, .activities-img {
+		width: 25vw;
+		height: 25vw;
+		object-fit: cover;
+	}
+	.boracay-footer, .island-footer {
+		display: none;
+	}
+	.dining-gallery-1-1-dining, .dining-gallery-1-img-dining:nth-child(2), .dining-gallery-3-1-dining:nth-child(1){
+		display: none;
+	}
+	.dining-text-text-dining{
+		font-size: 2.5vw;
+	}
+	.dining-text-contacts-dining{
+		font-size: 2vw;
+	}
+	.dining-text-title-dining {
+		font-family: 'Lihataja Brush';
+		font-size: 5.5vw;
+		text-align: center;
+	}
+	.dining-gallery-1-img-dining {
+		max-width: 300px;
+		max-height: 600px;
+		object-fit: contain;
+	}
+	.dining-dining {
+		margin-top: 15vw;
+	}
+
+	.intro-text {
+		font-size: 2.75vw;
+	}
+	.dining-text-title{
+		font-size: 7vw;
+	}
+	.lodge-text-shop{
+		margin: 10vw auto;
+	}
+	.shop-description-shop {
+		margin: 5vw 10vw;
+	}
+	.shop-shop{
+		margin: 5vw 10vw;
+	}
+	.shop-img-shop:nth-child(1){
+		display: none;
+	}
+	.shop-title-shop{
+		margin-right: 5vw;
+	}
+	.lodge-gallery-1-lodge {
+		display: none;
+	}
+	.rating-lodge{
+		display: none;
+	}
+	.lodge-body-lodge{
+		margin: 0;
+	}
+	.lodge-title-lodge{
+		margin: auto;
+	}
+	.lodge-gallery-2-lodge{
+		width: 80vw;
+	}
+	.lodging-info-gal-lodge{
+		margin: 0 10vw;
+	}
+	.act-img-1, .act-img-2{
+		display: none;
+	}
+	.act-img-3{
+		position: static;
+		margin: 0;
+		right: 0;
+	}
+	.act-img-gal,.act-img-gal-l {
+		margin: 2vw 2vw;
+		width: 444px;
+		height: 732px;
+	}
+}

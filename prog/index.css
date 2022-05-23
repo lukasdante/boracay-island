@@ -1,0 +1,960 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding:  0;
+}
+
+@font-face {
+	font-family: 'Lemon Milk';
+	src:  url(../fonts/LEMONMILK-Bold.otf);
+}
+
+@font-face{
+	font-family: 'Vladimir';
+	src:  url(../fonts/VLADIMIR.ttf);
+}
+
+@font-face {
+	font-family: 'Lihataja Brush';
+	src:  url(../fonts/Lihataja.otf);
+}
+
+body div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #292929;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: steelblue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.landing-section {
+	padding-top: 20vw;
+	flex-direction: column;
+}
+
+#landing-img {
+	width: 100%;
+	position: absolute;
+	z-index:  -1;
+	top: 0;
+}
+
+.landing-text {
+	flex-direction: column;
+	z-index: 1;
+}
+
+[class *= "beau"] {
+	font-family: 'Vladimir';
+	color: white;
+	text-shadow: 0px 3px 6px #202020;
+	font-size: 3vw;
+}
+
+.landing-boracay {
+	font-family: 'Lemon Milk';
+	font-size: 8vw;
+	color: white;
+	z-index: 1;
+	text-shadow: 0px 3px 6px #202020;
+}
+
+.landing-contact-img {
+	width: 3.125vw;
+	height: 3.125vw;
+	margin: 10px;
+}
+
+.landing-contacts {
+	padding-bottom: 17vw;
+}
+
+.hr-break-1 {
+	background-color: #707070;
+	height: 0.25vw;
+	width: 30%;
+	margin: auto auto;
+}
+
+.intro-text {
+	font-family: 'Lato';
+	font-size: 1.75vw;
+	font-weight: 200;
+	color: #292929;
+	margin: 3vw 10vw;
+	text-align: center;
+}
+
+.intro-img-wrap {
+	justify-content: space-evenly;
+	margin: 5vw 18.229vw;
+}
+
+.intro-img {
+	width: 13.02vw;
+	height: 13.02vw;
+	margin: 5px;
+	transition: 0.5s ease;
+}
+
+.intro-img:hover {
+	transform: scale(1.2);
+}
+
+.intro-img:hover ~ img {
+	transform: translateX(1.5vw);
+}
+
+.hr-break-2 {
+	background-color: #707070;
+	height: 0.25vw;
+	width: 30%;
+	margin: auto auto;
+}
+
+
+.div-text {
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.div-home {
+	margin: 4vw 0;
+}
+
+.dining-text-title {
+	font-family: 'Lihataja Brush';
+	font-size: 7vh;
+}
+
+.dining-text-text {
+	font-family: 'Lato';
+	font-size: 3vh;
+	font-weight: 200;
+	text-align: center;
+	width: 400px;
+	padding: 0 20px;
+}
+
+.dining-gallery-1, .dining-gallery-2 {
+	flex-direction: column;
+}
+
+
+.dining-gallery-1 {
+	position: relative;
+	width: 209px;
+	height: 365px;
+	margin-right: 1vw;
+}
+
+.dining-gallery-2-1-ov {
+	position: relative;
+	width: 441px;
+	height: 211px;
+}
+
+.dining-gallery-2-2-ov {
+	position: relative;
+	width: 293px;
+	height: 179px;
+	margin-top: 20px;
+}
+
+.overlay-text {
+	font-family: 'Lihataja Brush';
+	font-size: 2em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.5s ease;
+	text-align: center;
+}
+
+.overlay-text:hover {
+	opacity:  1;
+}
+
+[class *= -image-] {
+	display: block;
+}
+
+.dining-gallery {
+	align-items: flex-start;
+	margin: 1vw;
+}
+
+.dining-gallery-2 {
+	align-items: flex-start;
+}
+
+.hr-break-3 {
+	background-color: #707070;
+	height: 0.25vw;
+	width: 30%;
+	margin: auto auto;
+}
+
+.shop-gallery-1 {
+	position: relative;
+	width: 602px;
+	height: 174px;
+	margin-bottom: 20px;
+}
+
+.shop-gallery-2-1-ov {
+	position: relative;
+	width: 198px;
+	height: 194px;
+	margin-right: 20px;
+}
+
+.shop-gallery-2-2-ov {
+	position: relative;
+	width: 269px;
+	height: 265px;
+}
+
+.shop-gallery {
+	flex-direction: column;
+	margin-left: 50px;
+	margin-right: 10px;
+}
+
+.shop-gallery-2 {
+	align-items: flex-start;
+}
+
+.shop-image-1-1 {
+	margin: 20px;
+}
+
+.shop-text-text {
+	font-family: 'Lato';
+	font-size: 3vh;
+	font-weight: 200;
+	text-align: center;
+	width: 400px;
+	padding-left: 20px;
+}
+
+.hr-break-4 {
+	background-color: #707070;
+	height: 0.25vw;
+	width: 30%;
+	margin: auto auto;
+}
+
+.lodging-home {
+	flex-direction: column;
+	margin: 4vw 0;
+	overflow-x: hidden;
+}
+
+.lodging-logo{
+	max-width: 400px;
+	width: 40vw;
+}
+
+.lodging-img-ov {
+	position: relative;
+	max-width: 352px;
+	max-height: 683px;
+}
+
+.activities-img-ov {
+	position: relative;
+	width: 258px;
+	height: 527px;
+}
+
+.activities-logo {
+	max-width: 400px;
+	width: 40vw;
+}
+
+.activities-home {
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+.activities-wrap {
+	flex-direction: column;
+	margin: 1vw;
+}
+
+.activities-text {
+	font-family: 'Lemon Milk';
+	font-size: 3vw;
+	margin: 1vw;
+}
+
+#landing-img-dining {
+	width: 100%;
+	height: 10vh;
+	object-fit: cover;
+	margin-top: 80px;
+}
+.lodge-bold-dining{
+	color: #3B3B3B;
+	font-size:68px;
+	font-family: "LEMON MILK";
+	text-shadow: 0px 3px 6px black;
+	position: absolute;
+	text-align: center;
+	margin-left: 40px;
+	letter-spacing: 2px;
+}
+.lodge-light-dining{
+	font-size:75px;
+	font-family: 'Lihataja Brush';
+	color: #FFFFFF;
+	text-shadow: 0px 3px 6px #000000;
+	margin-left:260px;
+	padding: 15px;
+	letter-spacing: 3px;
+	margin-top: 35px;
+}
+
+.dining-dining {
+	margin: 10vw 10vw;
+}
+
+.dining-gallery-1-1-dining {
+	flex-direction: column;
+	align-items: space-between;
+}
+
+.dining-gallery-1-2-dining {
+	flex-direction: column;
+}
+
+.dining-gallery-1-img-dining {
+	margin: 10px;
+}
+
+.dining-text-dining {
+	flex-direction: column;
+	width: 40vw;
+	height: 30vw;
+	margin-left: 10px;
+}
+
+.dining-text-title-dining {
+	font-family: 'Lihataja Brush';
+	font-size: 10vh;
+	text-align: center;
+}
+
+.dining-text-text-dining {
+	font-family: 'Lato';
+	font-size: 3vh;
+	text-align: center;
+	font-weight: 200;
+}
+
+.dining-text-contacts-dining {
+	font-family: 'Lato';
+	font-weight: 500;
+	margin-top: 2vh;
+	font-size: 2.5vh;
+	text-align: center;
+}
+
+.dining-text-see-more-dining {
+	font-family: 'Lato';
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+	cursor: pointer;
+	width: 200px;
+	height: 80px;
+	border-radius: 34px;
+	background-size: 200%;
+	transition: 0.5s ease;
+	margin-top: 1vh;
+}
+
+.dining-text-see-more-dining:hover{
+	background-position: right;
+}
+
+.dining-gallery-3-dining {
+	flex-direction: column;
+}
+
+#landing-img-shop {
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+}
+
+.lodge-text-shop{
+	display: flex;
+	justify-content: center;
+	margin-top: 11.719vw;
+	margin-bottom:11.719vw;
+	background-color: white;
+	height: 200px;
+	width: 100vw;
+}
+.lodge-bold-shop{
+	color: #3B3B3B;
+	font-size:68px;
+	font-family: "LEMON MILK";
+	text-shadow: 0px 3px 6px black;
+	position: absolute;
+	text-align: center;
+	line-height: 0.8em;
+	font-weight: 1;
+	letter-spacing: 2px; 
+}
+
+.lodge-light-shop{
+	font-size:75px;
+	font-family: 'Lihataja Brush';
+	color: #FFFFFF;
+	text-shadow: 0px 3px 6px #000000;
+	margin-left: 260px;
+	padding: 15px;
+	letter-spacing: 3px;
+	margin-top: 35px;
+}
+
+.shop-shop{
+	flex-direction: column;
+	margin: 50px 300px;
+}
+
+
+.shop-description-shop {
+	margin: 75px 0px;
+}
+
+.shop-title-shop {
+	font-family: 'Lihataja Brush';
+	font-size: 62px;
+	text-align: center;
+	margin-right: 150px;
+}
+
+.shop-text-shop {
+	font-family: 'Lato';
+	font-size: 23px;
+	text-align: center;
+	width: 700px;
+	font-weight: 200;
+}
+
+.shop-img-shop {
+	margin: 20px;
+}
+
+.shop-gallery-shop {
+	margin-bottom: 50px;
+}
+
+.shop-info-shop {
+	font-family: 'Lato';
+	font-size: 23px;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 25px;
+}
+
+.shop-info-text-shop {
+	font-weight: 300;
+	display: flex;
+}
+
+span {
+	flex-direction: row;
+}
+
+.hr-shop {
+	background-color: #707070;
+	height: 5px;
+	margin-bottom: 50px;
+	width: 80%;
+	margin:  auto;
+	margin-bottom: 50px;
+}
+
+.lodge-title-lodge {
+	font-family: 'Lihataja Brush';
+	margin-left: auto;
+	margin-right: 150px;
+	font-size: 62px;
+}
+
+.lodge-text-lodge {
+	font-family: 'Lato';
+	font-size: 23px;
+	text-align: center;
+	font-weight: 200;
+	margin-bottom: 25px;
+}
+
+.lodge-contacts-lodge {
+	font-family: 'Lato';
+	font-size: 23px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.lodge-body-lodge {
+	flex-direction: column;
+	margin: 50px 300px;
+}
+
+.lodge-gallery-2-lodge {
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 30vw;
+}
+
+
+
+[class *= lodge-gallery] {
+	margin: 20px;
+}
+
+.lodging-info-gal-lodge {
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin: 50px 350px;
+}
+
+.lodging-info-gal-lodge p {
+	font-family: 'Lato';
+	font-size: 23px;
+}
+
+.lodging-info-lodge {
+	font-weight: 200;
+}
+
+.rating-lodge {
+	flex-direction: column;
+	margin: 50px 300px;
+	border-radius: 64px;
+	border: solid #393939;
+}
+
+.star-img-lodge {
+	width: 23px;
+	margin: 10px 5px;
+}
+
+.stars-lodge {
+	margin-right: auto;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.rating-text-lodge, .rating-author-lodge {
+	font-family: 'Lato';
+	font-size: 23px;
+	margin: 10px 50px;
+	font-weight: 200;
+}
+
+.rating-author-lodge {
+	margin-left: auto;
+	margin-bottom: 25px;
+	font-weight: 500;
+}
+
+hr {
+	background-color: #707070;
+	height: 5px;
+	width: 25%;
+	margin:  auto;
+	margin-bottom: 150px;
+}
+
+.header-lodge {
+	margin-bottom: 100px;
+}
+
+.headertwo-lodge{
+    display:grid;
+    grid-template-columns: 460px 492px 414px;
+	padding-top: 20px;
+	gap: 15px;
+	padding-bottom: 20px;
+}
+
+.header-left-lodge{
+	height:336px;
+	width:450px;
+	object-fit: cover;
+}
+.header-mid-lodge{
+	width: 485px;
+	height: 162px;
+	object-fit: cover;
+}
+.header-right-lodge{
+	width: 401px;
+	height: 336px;
+	object-fit: cover;
+}
+
+.lodge-bold-lodge{
+	color: #3B3B3B;
+	font-size:68px;
+	font-family: "LEMON MILK";
+	text-shadow: 0px 3px 6px black;
+	position: absolute;
+	text-align: center;
+	line-height: 0.8em;
+	font-weight: 1;
+	letter-spacing: 2px; 
+}
+
+.lodge-light-lodge{
+	font-size:75px;
+	font-family: "Lihataja Brush";
+	color: #FFFFFF;
+	text-shadow: 0px 3px 6px #000000;
+	margin-left:260px;
+	padding: 15px;
+	letter-spacing: 3px;
+	margin-top: 35px;
+}
+
+.head-center-lodge {
+	flex-direction: column;
+}
+
+.head-left-lodge, .head-right-lodge {
+	margin: 10px;
+}
+
+#landing-img {
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+}
+
+.lodge-text-act{
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	background-color: white;
+	margin-top: 4vw;
+	height: 20vw;
+	width: 30vw;
+	margin-left: 200px;
+}
+.lodge-bold-act{
+	color: #3B3B3B;
+	font-size:4vw;
+	font-family: "LEMON MILK";
+	text-shadow: 0px 3px 6px black;
+	position: absolute;
+	text-align: center;
+	line-height: 0.8em;
+	font-weight: 1;
+	letter-spacing: 2px; 
+}
+
+.lodge-light-act{
+	font-size:4vw;
+	font-family: 'Lihataja Brush';
+	color: #FFFFFF;
+	text-shadow: 0px 3px 6px #000000;
+	margin-left:260px;
+	padding: 15px;
+	letter-spacing: 3px;
+	margin-top: 35px;
+}
+
+.acts {
+	flex-direction: column;
+	margin: 50px 300px;
+	justify-content: space-between;
+}
+
+.act-title {
+	font-family: 'Lihataja Brush';
+	font-size: 62px;
+	margin-bottom: 60px;
+}
+
+.act-text {
+	flex-direction: column;
+	align-items: flex-start;
+	width: 450px;
+}
+
+.act-description, .act-point, .act-contacts {
+	font-family: 'Lato';
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.act-contacts {
+	font-weight: 700;
+}
+
+.act-point {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.act-description {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.act-img-gal {
+	position: relative;
+  	top: 0;
+  	right: 0;
+  	width: 0px;
+  	margin-left: 800px;
+}
+
+.act-img-gal-l {
+	position: relative;
+  	top: 0;
+  	right: 0;
+  	width: 0px;
+  	margin-left: 500px;
+}
+
+.act-img-1 {
+	position: relative;
+  	top: 0;
+  	right: 0;
+}
+
+.act-img-2 {
+	position: relative;
+  	right:  360px;
+}
+.act-img-3 {
+	position: relative;
+  	right:  720px;
+}
+
+
+
+
+.book-main {
+	flex-direction: column;
+	width: 90vw;
+	height: 32vw;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-radius: 32px;
+	background-color: #E7DDD1;
+	box-shadow: 0px 6px 12px rgba(0,0,0,0.16);
+}
+
+.book-now {
+	font-family: 'Lemon Milk';
+	font-size: 5vw;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 20px;
+	flex-wrap: wrap;
+}
+
+li {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 10px 10px;
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.arrival {
+	font-family: 'Lato';
+	font-size: 20px;
+	width: 157px;
+	height: 36px;
+	border-radius: 12px;
+	box-shadow: 0px 3px 3px #999;
+	background-color: #ECEAEA;
+	border: none;
+	margin-top: 10px;
+	padding: 7px;
+}
+
+.rooms {
+	font-family: 'Lato';
+	font-size: 20px;
+	width: 120px;
+	height: 36px;
+	border-radius: 12px;
+	box-shadow: 0px 3px 3px #999;
+	background-color: #ECEAEA;
+	border: none;
+	margin-top: 10px;
+	padding: 7px;
+}
+
+.voucher {
+	font-family: 'Lato';
+	font-size: 20px;
+	width: 220px;
+	height: 36px;
+	border-radius: 12px;
+	box-shadow: 0px 3px 3px #999;
+	background-color: #ECEAEA;
+	border: none;
+	margin-top: 10px;
+	padding: 7px;
+}
+
+.button-1 {
+	background-color: #E5C9A6;
+	font-family: 'Lemon Milk';
+	font-size: 19px;
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0px 5px 8px rgba(0,0,0,0.16);
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+.book-gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 50px;
+	margin: 3vw 3vw;
+	overflow: hidden;
+	justify-items: center;
+	align-items: center;
+}
+
+.box {
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.16);
+	transition: 0.5s ease;
+}
+
+.box:hover {
+	filter: brightness(0.7);
+}
+
+.book-foot {
+	flex-direction: column;
+	width: 90vw;
+	height: 60vw;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-radius: 32px;
+	background-color: #E7DDD1;
+	box-shadow: 0px 6px 12px rgba(0,0,0,0.16);
+}
+
+.ad {
+	flex-direction: column;
+}
+
+.ad-sub {
+	font-family: 'Lato';
+	text-align: center;
+}
+
+.ad-head {
+	font-family: 'Lemon Milk';
+	font-size: 5vw;
+}
+
+.foot {
+	font-family: 'Lato';
+	font-size: 20px;
+	width: 15vw;
+	height: 36px;
+	border-radius: 12px;
+	box-shadow: 0px 3px 3px #999;
+	background-color: #ECEAEA;
+	border: none;
+	margin-top: 10px;
+	padding: 7px;
+	transition: 0.5s ease;
+}
+
+.foot:focus, .arrival:focus, .rooms:focus, .voucher:focus {
+	background-color: #F1E8DD;
+	transform: scale(1.05);
+	outline: none;
+}
+
+.button-2 {
+	background-color: #E5C9A6;
+	font-family: 'Lemon Milk';
+	font-size: 19px;
+	width: 300px;
+	height: 50px;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0px 5px 8px rgba(0,0,0,0.16);
+	cursor: pointer;
+	margin-bottom: 50px;
+	transition: 0.5s ease;
+}
+
+.button-2:hover, .button-1:hover {
+	background-color: #F2E0CA;
+}
+
+.nt {
+	font-family: 'Lato';
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+.nt:hover {
+	font-size: 22px;
+}
+
+.privacy-notice {
+	font-family: 'Segoe UI', sans-serif;
+	text-decoration: underline;
+	cursor: pointer;
+}
